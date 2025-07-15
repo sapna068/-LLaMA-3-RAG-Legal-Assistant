@@ -1,0 +1,32 @@
+# Core LLM and embeddings
+transformers>=4.41.0
+sentence-transformers>=2.5.1
+accelerate
+torch>=2.1
+bitsandbytes  # If using quantized models like LLaMA 3 4-bit
+
+# Retrieval
+faiss-cpu>=1.7.4
+
+# Document ingestion
+unstructured[all]  # For PDF, DOCX, HTML parsing
+langchain>=0.2.0
+
+# OCR and PDF support
+pdfplumber
+python-docx
+tqdm
+
+# App UI
+streamlit
+
+# Data
+pandas
+numpy
+
+# Configs
+pyyaml
+
+# Optional: evaluation and logging
+ragas
+scikit-learn
