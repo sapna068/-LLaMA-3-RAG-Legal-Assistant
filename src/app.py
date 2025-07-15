@@ -55,3 +55,9 @@ else:
 
 st.markdown("---")
 st.caption("🔐 Built with secure RAG using LLaMA 3, FAISS, and E5 embeddings.")
+
+from guardrails import hallucination_check
+
+check = hallucination_check(answer, chunks)
+st.subheader("🔎 Grounding Check")
+st.markdown(check["message"])
