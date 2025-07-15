@@ -48,4 +48,36 @@ Copy
 Edit
 streamlit run src/app.py
 
+Security Notes
+Vector DB is stored locally (FAISS)
+
+No external API calls to OpenAI — uses local or self-hosted LLaMA 3
+
+All document access is local and controlled
+
+Feedback logging is enabled
+
+📚 Models Used
+LLM: meta-llama/Meta-Llama-3-8B (or quantized variant)
+
+Embeddings: intfloat/e5-large-v2
+
+Vector DB: FAISS (cosine similarity)
+
+📄 License
+MIT
+
+yaml
+Copy
+Edit
+
+---
+
+### ✅ Next Up:
+I'll now generate:
+- `requirements.txt`
+- `config/settings.yaml`
+- Then move to `src/` code files (`ingest_docs.py`, `build_vectorstore.py`, etc.)
+
+
 
