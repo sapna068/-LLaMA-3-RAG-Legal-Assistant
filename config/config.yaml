@@ -1,0 +1,23 @@
+# LLM Settings
+llm_model_name: meta-llama/Meta-Llama-3-8B
+llm_local_path: null  # If loading from local disk, specify path
+load_in_4bit: true
+
+# Embedding Settings
+embedding_model_name: intfloat/e5-large-v2
+embedding_batch_size: 32
+
+# Chunking
+chunk_size: 500
+chunk_overlap: 50
+
+# FAISS Settings
+vectorstore_path: faiss_index/
+use_cosine_similarity: true
+
+# Retrieval Settings
+top_k: 5
+retrieval_score_threshold: 0.5
+
+# App Settings
+ui_title: "🧠 LLaMA 3 Legal RAG Assistant"
