@@ -9,3 +9,13 @@ This project demonstrates an end-to-end Retrieval-Augmented Generation (RAG) sys
 - ✅ Streamlit UI for interactive querying
 - ✅ Modular Python code and Jupyter notebook demo
 
+
+llm-rag-legal-assistant/
+│
+├── config/ # Config files (embedding model, chunk size, etc.)
+├── data/ # Folder to place raw documents (PDF, DOCX, HTML)
+├── src/ # All source code for ingestion, RAG, LLM, UI
+├── notebooks/ # Jupyter Notebook for interactive exploration
+├── requirements.txt # Python dependencies
+└── README.md # This file
+
