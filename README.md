@@ -19,3 +19,33 @@ llm-rag-legal-assistant/
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
+## 🔧 Setup Instructions
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/llm-rag-legal-assistant.git
+cd llm-rag-legal-assistant
+2. Create virtual environment & install dependencies
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate    # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+3. Place your private documents
+Put your internal files inside the data/sample_docs/ folder.
+
+4. Run the ingestion pipeline
+bash
+Copy
+Edit
+python src/ingest_docs.py
+python src/build_vectorstore.py
+5. Launch the Streamlit UI
+bash
+Copy
+Edit
+streamlit run src/app.py
+
+
